@@ -220,7 +220,7 @@
                            <label>&nbsp;</label>
                        </div>
                        <div class="col span-2-of-3">
-                           <input type="submit" value="Submit" id="submit">
+                           <input type="submit" value="Submit" id="send">
                        </div>
                    </div>
                </form>
