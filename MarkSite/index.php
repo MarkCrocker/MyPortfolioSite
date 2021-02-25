@@ -158,15 +158,15 @@
                      <div class="row">
                         
                         <?php
-                        
-                         <div class="form-messages success">
-                          Thank you! I will be in touch shortly!
-<!--
-                          
-                          <div class="form-messages error">
-                          Oops! Something went wrong. Please try again!
--->
-                          </div>
+                        if($_GET['success'] == 1) {
+                            echo "<div class=\"form-messages success\">
+                          Thank you! I will be in touch shortly!</div>";
+                        }
+                         
+                        if($_GET['success'] == -1) {
+                            echo "<div class=\"form-messages error\">
+                          Oops! Something went wrong. Please try again!</div>";
+                        }
                           ?>
                      </div>
                      
