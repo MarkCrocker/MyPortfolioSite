@@ -41,11 +41,13 @@ submitButton.addEventListener('click', function(e){
     
     name = name.value;
     localStorage.setItem('name', name);
-    
+    console.log.getItem(name);
     email.value;
     localStorage.setItem('email', email);
     
     message.value;
     localStorage.setItem('message', message);
     
+  
 })
+
