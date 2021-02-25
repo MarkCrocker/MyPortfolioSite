@@ -27,7 +27,7 @@ lightbox.addEventListener('click', e => {
 
 //LOCAL STORAGE CONTACT FORM//
 
-let submitButton = document.getElementById('submit');
+let submitButton = document.getElementById('send');
 let form = document.getElementById('form');
 
 form.addEventListener('submit', function(e) {
