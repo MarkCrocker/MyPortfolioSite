@@ -494,7 +494,7 @@ input[type=submit] {
 }
 
 #content2 {
-    grid-area: content2;
+/*     grid-area: content2; */
 }
 
 
