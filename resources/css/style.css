@@ -421,8 +421,7 @@ hr {
 
 /* ---- MAIN PAGE BUTTONS ---- */
 
-#content1 {
-    background: #f9f9f3;  
+#content1 {  
     grid-area: content1;
     position: relative;
     margin: auto;
