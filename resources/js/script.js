@@ -23,5 +23,10 @@ lightbox.addEventListener('click', e => {
   lightbox.classList.remove('active')
 })
 
+// MOBILE NAVIGATION //
+$('.js--nav-icon').click(function () {
+  let nav = $('.main-nav');
 
+  nav.slideToggle(200);
+})
 

@@ -4,6 +4,7 @@
       left: 60%;
       
     }
+    
   }
   
 
@@ -37,11 +38,14 @@
 /* FOR FULL SIZE */
 @media only screen and (max-width: 1200px) {
     .mark-image {
+        
         position: absolute;
         left: 60%;
         width: 400px;
         height: 500px;
       }
+
+
     .raised-edge {
         position: relative;
         width: 70%;
@@ -74,6 +78,8 @@
         width: 400px;
         height: 500px;
       }
+
+      
     .raised-edge {
         position: relative;
         width: 70%;
@@ -101,6 +107,10 @@
         width: 400px;
         height: 500px;
       }
+
+      blockquote {
+        font-size: 80%;
+    }
 
     .raised-edge {
         position: relative;
@@ -139,10 +149,18 @@
         grid-gap: 0.2rem;
     }
 
+    blockquote {
+        font-size: 80%;
+    }
+
+    div #content1 {
+        display: none;
+    }
+
     .mark-image {
         width: 400px;
         height: 500px;
-        top: 55%;
+        top: 50%;
         left: 30%;
     }
     .raised-edge {
@@ -162,25 +180,52 @@
           margin-top: 30px;
       }
 
-      #content1 {
-          margin-bottom: -60px;
-          grid-row: 1;
-          top: 450px;
-      }
+}
+
+
+
+@media only screen and (max-width: 796px) {
+    .main-nav {
+        display: contents;
+    }
 }
 
 /* FOR SMALL DEVICES UP TO 767px */
 @media only screen and (max-width: 795px) {
+   
+    .main-nav {
+        display: none;
+    }
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    nav {
+        float: left;
+    }
+
+    nav a {
+        display: block;
+        font-size: 125%;
+        padding: 0;
+        border: 0;
+       
+    }
+
+     #indicator {
+        display: none;
+    }
+
     .mark-image {
         width: 400px;
         height: 500px;
-        top: 55%;
+        /* top: 55%; */
         left: 30%;
     }
     .raised-edge {
         position: relative;
         width: 95%;
-        height: 400px;
+        height: 95%;
         margin-top: -50px;   
       }
       
@@ -194,25 +239,106 @@
           margin-top: 30px;
       }
 
-      #content1 {
-          margin-bottom: -60px;
-          width: 105%;
-          grid-row: 1;
-          top: 450px;
-      }
-      .btn-portfolio {
-          margin-left: 15px;
-          margin-right: -35px;
-      }
 
     
 
 }
 
 
-/* FOR SMALL PHONES UP TO 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
+    .mark-image {
+        left: 22%
+    }
 
+    blockquote {
+        font-size: 70%;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    input[type=submit] {
+        width: 60%;
+        height: 75px;
+        font-size: 125%;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:0.3fr 2.7fr 0.5fr 0.5fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "content1 content2"
+            "footer";
+        
+    }
+}
+
+
+@media only screen and (max-width: 510px) {
+    .mark-image {
+        width: 290px;
+        height: 390px;
+    }
+
+    .raised-edge {
+        position: relative;
+        width: 95%;
+        height: 70%;
+      }
+      
+    hr {
+        width: 90%;
+        margin-top: 25px;
+
+      }
+    
+      .row-2 h2 {
+          font-size: 80%;
+      }
+
+      input[type=submit] {
+        width: 60%;
+        height: 75px;
+        font-size: 125%;
+        margin-left: 50px;
+    }
+}
+
+/* FOR SMALL PHONES UP TO 480px */
+@media only screen and (max-width: 382px) {
+    .raised-edge {
+        position: relative;
+        width: 95%;
+        height: 70%;
+      }
+      
+    hr {
+        width: 90%;
+        margin-top: 25px;
+
+      }
+    
+      .row-2 h2 {
+          font-size: 70%;
+      }
+
+      h2 .features-title {
+          margin-top: 5px;
+      }
+
+      .section-testimonials  {
+          padding-top: 10px;
+      }
+
+      blockquote {
+        font-size: 40%;
+    }
 }
 
 
